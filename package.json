@@ -1,0 +1,25 @@
+{
+    "name": "bmi-calculator-backend",
+    "version": "1.0.0",
+    "engines": {
+        "node": "v20.14.0",
+        "npm": "10.7.0"
+    },
+    "scripts": {
+        "client": "cd client && yarn start",
+        "server": "nodemon server.js",
+        "build": "cd client && npm run build",
+        "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+        "start": "node server.js",
+        "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+    },
+    "dependencies": {
+        "body-parser": "^1.20.2",
+        "compression": "^1.7.4",
+        "concurrently": "^8.2.2",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.5",
+        "express": "^4.19.2",
+        "nodemon": "^3.1.3"
+    }
+}
