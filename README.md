@@ -4,3 +4,14 @@ This application calculates a person body mass index. Body mass index (BMI) is a
 The frontend used in this application is React JS and for the Backend Node JS with express js framework.
 This application uses React-Redux for state management.
 
+To run application locally go to 
+**Root Folder**
+enter
+**npm install**
+next go to the client folder
+and enter
+**npm install**
+wait for each npm commands to finish installing 
+then go back to the root Folder
+then enter
+**npm run dev**
